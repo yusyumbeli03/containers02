@@ -1,0 +1,239 @@
+﻿<html>
+<head>
+    <title>Second page</title>
+    <link rel="shortcut icon" href="photos\icons8-game-die-48.png">
+    <link rel="stylesheet" type="text/css" href="css\style5.css" />
+    <meta charset="utf-8" />
+    <meta name="description" content="Second lab using tables,image insert,sounds and video fikes" />
+    <meta name="keywords" content="photos in html,family table,children caracteristics" />
+    <meta name="author" content="aliona" />
+</head>
+<body>
+    <!--Задание 1(3 фото)-->
+    <div align="center">
+        <img src="photos\picture1.jpg" class="photo1"width="300" height="350" title="quote1" alt="You got one life so live it right" />
+        <img src="photos\picture2.jpg" class="photo2" width="300" height="350" style="margin:0 30px 0 100px;" title="quote2" alt="Find something good in every day" /><br />
+        <img src="photos\picture3.jpg" class="photo3" width="300" height="350" border="3" title="quote3" alt="do it for you" />
+    </div>
+    <!--Задание 2 (таблица) -->
+    <table border="3" align="center" height="600" cellspacing="0" bgcolor="fff8dc">
+        <tr>
+            <th colspan="5">Date despre copiii colaboratorilor</th>
+        </tr>
+        <tr>
+            <th>Nume,prenume</th>
+            <th>Adresă fizică</th>
+            <th>Numârul copii minor</th>
+            <th>Prenume copil și anul de naștere</th>
+            <th>Poza copil</th>
+        </tr>
+        <tr align="center" class="first_line">
+            <td rowspan="2">Ivanov Elena</td>
+            <td rowspan="2">Str. Codrilor 45, ap.56</td>
+            <td rowspan="2">2</td>
+            <td>Elena,2006</td>
+            <td><a href="html\first_child.html" target="_blank"><img src="photos\7.jpg" width="80" height="110" /></a></td>
+        </tr>
+        <tr align="center" class="first_line">
+            <td>Valeriu,2011</td>
+            <td><a href="html\second_child.html" target="_blank"><img src="photos\4.jpg" width="80" height="110" /></a></td>
+        </tr>
+        <tr align="center">
+            <td rowspan="3">Mihailov Marta</td>
+            <td rowspan="3">Str. Puskin 10, ap.45 </td>
+            <td rowspan="3">3</td>
+            <td>Ion,2008</td>
+            <td><a href="html\third_child.html" target="_blank"><img src="photos\6.jpg" width="80" height="110" /></a></td>
+        </tr>
+        <tr align="center">
+            <td>Ecaterina,2010</td>
+            <td><a href="html\fifth_child.html" target="_blank"><img src="photos\2.jpg" width="80" height="110" /></a></td>
+        </tr>
+        <tr align="center">
+            <td>Valentin,2011</td>
+            <td><a href="html\forth_child.html" target="_blank"><img src="photos\5.jpg" width="80" height="110" /></a></td>
+        </tr>
+        <tr align="center">
+            <td>Cliucnicov Magdalena</td>
+            <td>Str. Nucilor 34, ap. 22</td>
+            <td>1</td>
+            <td>Mariuta,2012</td>
+            <td><a href="html\sixth_child.html" target="_blank"><img src="photos\3.jpg" width="80" height="110" /></a></td>
+        </tr>
+        <tr align="center">
+            <th colspan="2">Total număr copii</th>
+            <td colspan="3">6</td>
+        </tr>
+    </table><br />
+    <!--Карта html-->
+    <center> <img src="photos\karta.jpg" title="Karta mira" alt="Karta nashey planeti" usemap="#karta" /></center><br />
+    <p>
+        <map name="karta">
+            <area alt="Северная Америка " shape="poly" coords="109,229,429,131,637,135,601,243,367,463,245,385,201,287" href="html\continents\sevamerica.html" target="_blank" title="Северная Америка" />
+            <area alt="Южная  Америка " shape="rect" coords="398,497,548,747" href="html\continents\southamerica.html"  target="_blank" title="Южная Америка" />
+            <area alt="Африка" shape="poly" coords="637,473,691,389,821,425,887,507,799,673,727,511" href="html\continents\africa.html" target="_blank"  title="Африка" />
+            <area alt="Евразия " shape="poly" coords="713,323,793,217,1093,175,1373,251,1091,481,963,453,797,355" href="html\continents\evrazia.html" target="_blank" title="Евразия" />
+            <area alt="Австралия " shape="circle" coords="1190,631,72" href="html\continents\avstralia.html"  target="_blank" title="Австралия" />
+            <area alt="Антарктида " shape="poly" coords="151,949,389,891,1117,867,1227,893,1237,949,343,961" href="html\continents\antarktida.html" target="_blank" title="Антарктида" />
+        </map>
+    </p>
+    <!--Форма-->
+<div class="form_conteiner">
+    <form>
+        <table  align="center" bgcolor="#e9967a" class="forma">
+            <tr>
+                <td rowspan="2">
+
+                    <fieldset>
+                        <legend>Личные данные</legend>
+                        <table>
+                            <tr>
+                                <td><label for="numele">*Фамилия</label></td>
+                                <td><input type="text" id="numele" pattern="[A-Za-zА-Яа-яЁё]" title="Пожалуйста,используйте только буквы" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="prenumele">*Имя</label></td>
+                                <td><input type="text" id="prenumele" pattern="[A-Za-zА-Яа-яЁё]" title="Пожалуйста,используйте только буквы" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="email">E-mail</label></td>
+                                <td><input type="email" id="email"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="data">*Дата рождения</label></td>
+                                <td><input type="date" id="data" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="male">Пол</label></td>
+                                <td>
+                                    <input type="radio" name="sex" id="male">Мужской
+                                    <input type="radio" name="sex">Женский
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="number">Телефон</label></td>
+                                <td><input type="tel" name="tel" id="number" placeholder="(+373)___-__-___" pattern="+373\[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{3}"></td>
+                            </tr>
+                            <tr>
+                                <td>  <label for="raion">Район</label></td>
+                                <td>
+                                    <select name="raion" id="raion">
+                                        <option value="Kishinev">Кишинёв</option>
+                                        <option value="Belti">Бельцы</option>
+                                        <option value="Edinet">Единцы</option>
+                                        <option value="Komrat">Комрат</option>
+                                        <option value="Cadir">Чадыр-Лунга</option>
+                                        <option value="Cahul">Кагул</option>
+                                        <option value="Cantemir">Кантемир</option>
+                                        <option value="Taraclia">Тараклия</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Учёба</td>
+                                <td>
+                                    <table>
+                                        <tr><td><input type="checkbox" id="colegiu"><label for="colegiu">Колледж</label></td></tr>
+                                        <tr><td> <input type="checkbox" id="licenta"><label for="licenta">Лиценциат</label></td></tr>
+                                        <tr><td> <input type="checkbox" id="masterat"><label for="masterat">Магистратура</label></td></tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="procee">Прочее</label></td>
+                                <td><textarea maxlength="1000" rows="5" cols="25" name="text" placeholder="Напишите что-то"></textarea></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+
+                </td>
+
+                <td>
+
+                    <fieldset >
+                        <legend>Данные товара</legend>
+                        <table>
+                            <tr>
+                                <td><label for="tovar">*Название продукта</label></td>
+                                <td><input type="text" id="tovar" pattern="[A-Za-zА-Яа-яЁё]"  title="Пожалуйста,используйте только буквы"required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="prodavec">*Изготовитель</label></td>
+                                <td><input type="text" id="prodavec" pattern="[A-Za-zА-Яа-яЁё]"  title="Пожалуйста,используйте только буквы" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="kolvo">*Количество товара</label></td>
+                                <td><input type="text" id="kolvo" pattern="[0-9]"  required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="color">*Цвет</label></td>
+                                <td><input type="color" id="color" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="size">*Размер</label></td>
+                                <td><input type="text" id="size" pattern="[0-9]" required></td>
+                            </tr>
+
+                        </table>
+                    </fieldset>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Банковские данные</legend>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="karta">*Тип карты</label>
+                                    <input type="radio" name="type" id="karta">Visa
+                                </td>
+                                <td><input type="radio" name="type">MasterCard</td>
+                            </tr>
+                            <tr>
+                                <td><label for="number">*Номер карты</label></td>
+                                <td><input type="text" id="number" pattern="[0-9]{16} title="Пожалуйста,используйте 16 цифр" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="data">*Истекает </label></td>
+                                <td><input type="date" id="data" required></td>
+                            </tr>
+
+                        </table>
+                    </fieldset>
+
+                </td>
+            </tr>
+            <tr><td colspan="2"><table width="100%"><tr><td><input type="reset" value="Отменить"> <input type="submit" value="Отправить"></td><td>*Поле должно быть заполнено</td></tr></table></td></tr>
+        </table>
+    </form>
+</div>
+    <!--Карта из google map(iframe)-->
+    <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10880.285870467857!2d28.814352395532403!3d47.01920216803298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97c2d03e2c6b1%3A0xd8e8b74ac8c3ef7b!2z0JzQvtC70LTQsNCy0YHQutC40Lkg0JPQvtGB0YPQtNCw0YDRgdGC0LLQtdC90L3Ri9C5INCj0L3QuNCy0LXRgNGB0LjRgtC10YI!5e0!3m2!1sru!2s!4v1676716876414!5m2!1sru!2s" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+    </br>
+    <div id="div1"></div>
+<br>
+    <div id="div2"></div>
+</br><div id="div3"></div>
+</br><div id="div4"></div>
+</br><div id="div5"></div>
+</br>
+<div id="anim2-container"><div class="child-one"></div><div class="child-two"></div></div>
+<br>
+<div id="anim1-container"><div id="anim1"></div></div>
+<br />
+    <!--Аудио и видео файлы-->
+    <center>
+        <video controls width="450" height="250">
+            <source src="C:\Users\Ready2Go\Desktop\2 семестр 2023\html\lab2_Iusiumbeli_Aliona\video\videomp4.mp4" />
+            <source src="C:\Users\Ready2Go\Desktop\2 семестр 2023\html\lab2_Iusiumbeli_Aliona\video\videowmv.wmv" />
+        </video><br />
+        <audio controls>
+            <source src="C:\Users\Ready2Go\Desktop\2 семестр 2023\html\lab2_Iusiumbeli_Aliona\audio\Andro.mp3" />
+            <source src="C:\Users\Ready2Go\Desktop\2 семестр 2023\html\lab2_Iusiumbeli_Aliona\audio\Andro.ogg" />
+
+        </audio>
+    </center>
+</body>
+</html>
